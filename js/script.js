@@ -16,7 +16,8 @@ custom.addEventListener('input', () => {
 })
 
 
-function calculateTip(){
+function calculateTip(event){
+    event.preventDefault();
 let bill = document.getElementById('bill').value;
 let people = document.getElementById('people').value;
 let totalTip= (tip/100) * bill; 
