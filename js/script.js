@@ -1,7 +1,8 @@
 let tipPercent = document.querySelectorAll('.tip');
 let tip=0;
 tipPercent.forEach(btn => {
-    btn.addEventListener('click', () => {
+    btn.addEventListener('click', (event) => {
+        event.preventDefault();
         console.log(btn.value);
         tip = btn.value;
     });
