@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <form action="solve" method="get" autocomplete="on" id="tipForm">
+        <legend>
+            <h1>SPLI<br>TTER &nbsp;</h1>
+        </legend>
+        <fieldset>
+            <div class="row"> 
+                <div class="column">
+                    <label for="bill">Bill</label>
+                    <img src="images/icon-dollar.svg" class="input-icons">
+                    <i class="input-icons"></i>
+                        <input type="text" id="bill" >
+                    
+                    <label for="button">Select Tip %</label><br>
+                    <button class="tip btn-percent"  value="5">5%</button>
+                    <button class="tip btn-percent"  value="10">10%</button>
+                    <button class="tip btn-percent"  value="15">15%</button>
+                    <button class="tip btn-percent"  value="25">25%</button>
+                    <button class="tip btn-percent"  value="50">50%</button>
+                    <input type="text" id="tipPercent" type="number" class="customPercent" placeholder="custom"></input>
+                   <div class="people">
+                        <label for="people">Number of people</label>
+                        <img src="images/icon-person.svg" class="input-iconii">
+                        <i class="input-iconii">  </i>
+                             <input type="survey" id="people" >
+                    
+                    </div>
+                </div>
+                <div class="column" id="tipWrapper">
+                    <div class="row">
+                        <div class="column">
+                            <!--<label>
+                                <button class="calculate">tipAmount</button>
+                            </label>-->
+                            <h6 class="calculate">Tip amount</h6>
+                            <p>/ person</p>
+                
+                            <h6 class="calculate">Total</h6>
+                            <p>/ person</p>
+                        </div>
+                        <div class="column" id="hidden">
+                                <div id="tipSplit">
+                                   <span id="tip"></span>
+                                </div>
+                                <div id="billSplit">
+                                    <span id="split"></span>
+                                </div>
+                        </div>
+                    </div>
+                    <button id="target" onclick="calculateTip()">Calculate</button>
+
+                    <button id="clearScreen" onclick="reset()">RESET</button>
+
+                </div>
+            </div>
+        
+        </fieldset>
+
+    </form>
+    <script src="js/script.js"></script>
+</body>
+</html>
