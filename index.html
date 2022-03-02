@@ -11,7 +11,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <form action="solve" method="get" autocomplete="on" id="tipForm">
+    <form autocomplete="on" id="tipForm" onsubmit="return false" >
         <legend>
             <h1>SPLI<br>TTER &nbsp;</h1>
         </legend>
@@ -59,9 +59,9 @@
                                 </div>
                         </div>
                     </div>
-                    <button id="target" onclick="calculateTip()">Calculate</button>
+                    <button id="target" type="submit" onclick="calculateTip()">Calculate</button>
 
-                    <button id="clearScreen" onclick="reset()">RESET</button>
+                    <button id="clearScreen" type="reset" onclick="reset()">RESET</button>
 
                 </div>
             </div>

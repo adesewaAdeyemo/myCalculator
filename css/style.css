@@ -134,14 +134,6 @@ button{
     text-align: right;
 
 }
-@media screen and(max-width: 768px){
-    column{
-        width:100%;
-    }
-    row{
-        flex: 100%;
-    }
-}
   
 .input-icons {
     width: 10px;
@@ -161,4 +153,15 @@ button{
 #hidden{
     text-align: right;
 }
-  
+
+@media screen and (max-width: 576px){
+
+    .row{
+        display: block;
+    }
+    .column{
+         width: 100%;
+    }
+    .tipWrapper{
+    }
+}

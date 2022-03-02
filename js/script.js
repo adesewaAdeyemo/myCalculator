@@ -3,6 +3,7 @@ let tip = 0;
 tipPercent.forEach((btn) => {
   btn.addEventListener("click", (event) => {
     event.preventDefault();
+
     console.log(btn.value);
     tip = btn.value;
   });
@@ -16,7 +17,8 @@ custom.addEventListener("input", () => {
 });
 
 function calculateTip(event) {
-  event.preventDefault();
+  console.log(event);
+
   let bill = document.getElementById("bill").value;
   let people = document.getElementById("people").value;
   let totalTip = (tip / 100) * bill;
