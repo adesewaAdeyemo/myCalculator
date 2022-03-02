@@ -38,6 +38,14 @@ fieldset{
     flex: 50%;
     padding: 1rem;
 }
+.rowWrapper{
+    
+    display:flex;
+}
+.columnWrapper{
+    flex: 50%;
+    padding: 1rem;
+}
 #tipWrapper{
     border-radius: 20px;
     background-color: rgb(18, 61, 61);
@@ -153,8 +161,7 @@ button{
 #hidden{
     text-align: right;
 }
-
-@media screen and (max-width: 576px){
+@media screen and (max-width: 768px){
 
     .row{
         display: block;
@@ -162,6 +169,47 @@ button{
     .column{
          width: 100%;
     }
-    .tipWrapper{
+    .rowWrapper{
+        display: flex;
+    }
+    .columnWrapper{
+         width: 50%;
+    }
+    h1{
+        font-size: 1.5rem;
+        padding-bottom: 3rem
+      ;
+    }
+    h6{
+        font-size: 0.7rem;
+
+    }
+    legend{
+        margin-left: 40%;
+    }
+    #bill{
+        width: 100%;
+    }
+    .tip{
+        width: 46%;
+    }
+    #tipPercent{
+        width: 46%;
+    }
+    #people{
+        width: 100%;
+    }
+    .tipPercent{
+        padding: 10px;
+        display: flex;
+    }
+    #tip,#split{
+        font-size: 1.4rem;
+        line-height: 5rem;
+        text-align: right;
+    
+    }
+    #target,#clearScreen{
+        font-size: 1rem;
     }
 }
